@@ -1,0 +1,191 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
+      "destination": "/:file",
+      "internal": true,
+      "missing": [
+        {
+          "type": "header",
+          "key": "x-nextjs-data"
+        }
+      ],
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+))/$"
+    },
+    {
+      "source": "/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)",
+      "destination": "/:notfile/",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+))$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/articulos/[slug]",
+      "regex": "^/articulos/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/articulos/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/capas/[tipo]",
+      "regex": "^/capas/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPtipo": "nxtPtipo"
+      },
+      "namedRegex": "^/capas/(?<nxtPtipo>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/paises/[iso]",
+      "regex": "^/paises/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPiso": "nxtPiso"
+      },
+      "namedRegex": "^/paises/(?<nxtPiso>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/regiones/[slug]",
+      "regex": "^/regiones/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/regiones/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/sistemas/[slug]",
+      "regex": "^/sistemas/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/sistemas/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/articulos",
+      "regex": "^/articulos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/articulos(?:/)?$"
+    },
+    {
+      "page": "/capas",
+      "regex": "^/capas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/capas(?:/)?$"
+    },
+    {
+      "page": "/comunidad",
+      "regex": "^/comunidad(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/comunidad(?:/)?$"
+    },
+    {
+      "page": "/contacto",
+      "regex": "^/contacto(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contacto(?:/)?$"
+    },
+    {
+      "page": "/indice",
+      "regex": "^/indice(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/indice(?:/)?$"
+    },
+    {
+      "page": "/mapa",
+      "regex": "^/mapa(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mapa(?:/)?$"
+    },
+    {
+      "page": "/normativa",
+      "regex": "^/normativa(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/normativa(?:/)?$"
+    },
+    {
+      "page": "/paises",
+      "regex": "^/paises(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/paises(?:/)?$"
+    },
+    {
+      "page": "/proveedores",
+      "regex": "^/proveedores(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/proveedores(?:/)?$"
+    },
+    {
+      "page": "/quiero-construir",
+      "regex": "^/quiero\\-construir(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/quiero\\-construir(?:/)?$"
+    },
+    {
+      "page": "/regiones",
+      "regex": "^/regiones(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/regiones(?:/)?$"
+    },
+    {
+      "page": "/selector",
+      "regex": "^/selector(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/selector(?:/)?$"
+    },
+    {
+      "page": "/sistemas",
+      "regex": "^/sistemas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sistemas(?:/)?$"
+    },
+    {
+      "page": "/sumate",
+      "regex": "^/sumate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sumate(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

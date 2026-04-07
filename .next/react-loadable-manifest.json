@@ -1,0 +1,44 @@
+{
+  "..\\..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
+    "id": 7489,
+    "files": [
+      "static/chunks/489.158bbe303a595fba.js"
+    ]
+  },
+  "..\\..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
+    "id": 12,
+    "files": [
+      "static/chunks/12.f1f4d35b52633e8d.js"
+    ]
+  },
+  "app\\mapa\\page.tsx -> leaflet": {
+    "id": 29,
+    "files": [
+      "static/chunks/77cbbdfc.287692ecd57f5103.js"
+    ]
+  },
+  "app\\page.tsx -> @/components/GlobeHero": {
+    "id": 9980,
+    "files": [
+      "static/chunks/980.fb2eb5afbe29b135.js"
+    ]
+  },
+  "app\\paises\\page.tsx -> @/components/Globe/Globe3D": {
+    "id": 2123,
+    "files": [
+      "static/chunks/123.7b89598ca7d6df97.js"
+    ]
+  },
+  "components\\GlobeHero.tsx -> three": {
+    "id": 5690,
+    "files": [
+      "static/chunks/c3f2cda1.d58670ea66c1eb98.js"
+    ]
+  },
+  "components\\Globe\\Globe3D.tsx -> three": {
+    "id": 5690,
+    "files": [
+      "static/chunks/c3f2cda1.d58670ea66c1eb98.js"
+    ]
+  }
+}

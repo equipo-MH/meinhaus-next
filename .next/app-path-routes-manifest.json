@@ -1,0 +1,23 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/capas/page": "/capas",
+  "/comunidad/page": "/comunidad",
+  "/articulos/page": "/articulos",
+  "/contacto/page": "/contacto",
+  "/indice/page": "/indice",
+  "/mapa/page": "/mapa",
+  "/page": "/",
+  "/normativa/page": "/normativa",
+  "/paises/page": "/paises",
+  "/proveedores/page": "/proveedores",
+  "/selector/page": "/selector",
+  "/quiero-construir/page": "/quiero-construir",
+  "/regiones/page": "/regiones",
+  "/sistemas/page": "/sistemas",
+  "/sumate/page": "/sumate",
+  "/regiones/[slug]/page": "/regiones/[slug]",
+  "/capas/[tipo]/page": "/capas/[tipo]",
+  "/articulos/[slug]/page": "/articulos/[slug]",
+  "/paises/[iso]/page": "/paises/[iso]",
+  "/sistemas/[slug]/page": "/sistemas/[slug]"
+}

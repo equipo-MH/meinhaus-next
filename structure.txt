@@ -1,0 +1,61 @@
+meinhaus-next/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx                    → home
+│   │   ├── globals.css
+│   │   ├── sistemas/
+│   │   │   ├── page.tsx                → /sistemas (grid)
+│   │   │   └── [slug]/page.tsx         → /sistemas/sip etc
+│   │   ├── selector/
+│   │   │   └── page.tsx                → /selector
+│   │   ├── capas/
+│   │   │   ├── page.tsx                → /capas (overview)
+│   │   │   └── [tipo]/page.tsx         → /capas/fachadas etc
+│   │   ├── regiones/
+│   │   │   ├── page.tsx                → /regiones
+│   │   │   └── [slug]/page.tsx         → /regiones/patagonia etc
+│   │   ├── articulos/
+│   │   │   ├── page.tsx
+│   │   │   └── [slug]/page.tsx
+│   │   ├── normativa/
+│   │   │   └── page.tsx
+│   │   ├── mapa/
+│   │   │   └── page.tsx
+│   │   └── contacto/
+│   │       └── page.tsx
+│   ├── components/
+│   │   ├── Nav.tsx
+│   │   ├── Footer.tsx
+│   │   ├── SistemaCard.tsx
+│   │   ├── SistemaDetalle.tsx
+│   │   ├── Veredicto.tsx
+│   │   ├── CapaCard.tsx
+│   │   ├── RegionCard.tsx
+│   │   ├── ArticuloCard.tsx
+│   │   ├── Selector/
+│   │   │   ├── SelectorFlow.tsx
+│   │   │   ├── StepRenderer.tsx
+│   │   │   ├── ResultScreen.tsx
+│   │   │   └── ProgressBar.tsx
+│   │   ├── Mapa.tsx
+│   │   ├── Calculadora.tsx
+│   │   └── Comparador.tsx
+│   ├── data/
+│   │   ├── sistemas.ts
+│   │   ├── capas.ts
+│   │   ├── regiones.ts
+│   │   ├── articulos.ts
+│   │   ├── provincias.ts
+│   │   ├── scoring.ts
+│   │   └── puntosMapa.ts
+│   ├── lib/
+│   │   └── selector.ts                 → scoring engine
+│   └── types/
+│       └── index.ts
+├── public/
+│   └── fonts/                          → Satoshi local
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+└── netlify.toml
