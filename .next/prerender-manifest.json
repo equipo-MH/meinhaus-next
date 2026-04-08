@@ -26,7 +26,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/articulos": {
+    "/indice": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -39,8 +39,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/articulos",
-      "dataRoute": "/articulos.rsc",
+      "srcRoute": "/indice",
+      "dataRoute": "/indice.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -74,30 +74,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/indice": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/indice",
-      "dataRoute": "/indice.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/mapa": {
       "experimentalBypassFor": [
         {
@@ -122,7 +98,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/comunidad": {
+    "/normativa": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -135,8 +111,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/comunidad",
-      "dataRoute": "/comunidad.rsc",
+      "srcRoute": "/normativa",
+      "dataRoute": "/normativa.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -194,6 +170,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/articulos": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/articulos",
+      "dataRoute": "/articulos.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/proveedores": {
       "experimentalBypassFor": [
         {
@@ -233,30 +233,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/quiero-construir",
       "dataRoute": "/quiero-construir.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/normativa": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/normativa",
-      "dataRoute": "/normativa.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -329,6 +305,54 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/sistemas",
       "dataRoute": "/sistemas.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/sumate": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/sumate",
+      "dataRoute": "/sumate.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/comunidad": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/comunidad",
+      "dataRoute": "/comunidad.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -449,30 +473,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/articulos/[slug]",
       "dataRoute": "/articulos/sip-vs-steel-patagonia.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/sumate": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/sumate",
-      "dataRoute": "/sumate.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
