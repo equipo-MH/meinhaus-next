@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import Link from "next/link"
 
@@ -25,19 +25,10 @@ export default function RegistroOficioPage() {
           <p className="font-mono text-sm text-[#8a7a6a] leading-relaxed">
             Mientras tanto, escribinos por WhatsApp y te sumamos a los primeros verificados de Patagonia.
           </p>
-          
-            href="https://wa.me/5491162181345"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block font-mono text-sm tracking-widest uppercase border border-[#c17a4a] text-[#c17a4a] px-8 py-4 hover:bg-[#c17a4a] hover:text-[#0e0e0e] transition-colors duration-200"
-          >
-            Escribinos por WhatsApp
-          </a>
+          <a href="https://wa.me/5491162181345" target="_blank" rel="noopener noreferrer" className="inline-block font-mono text-sm tracking-widest uppercase border border-[#c17a4a] text-[#c17a4a] px-8 py-4 hover:bg-[#c17a4a] hover:text-[#0e0e0e] transition-colors duration-200">Escribinos por WhatsApp</a>
         </div>
         <div className="mt-8">
-          <Link href="/" className="font-mono text-xs text-[#3a3a3a] hover:text-[#8a7a6a] transition-colors">
-            Volver
-          </Link>
+          <Link href="/" className="font-mono text-xs text-[#3a3a3a] hover:text-[#8a7a6a] transition-colors">Volver</Link>
         </div>
       </div>
     </main>
