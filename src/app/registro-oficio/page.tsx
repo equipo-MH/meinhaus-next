@@ -10,12 +10,10 @@ export default function RegistroOficioPage() {
           Registrar oficio
         </p>
         <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-6">
-          Tu oficio,{" "}
-          <em className="not-italic text-[#c17a4a]">visible donde importa.</em>
+          Tu oficio, visible donde importa.
         </h1>
         <p className="font-mono text-sm text-[#8a7a6a] max-w-lg mb-12 leading-relaxed">
-          Creamos tu perfil verificado en la plataforma. Los clientes que buscan
-          lo que haces te van a encontrar.
+          Creamos tu perfil verificado en la plataforma. Los clientes que buscan lo que haces te van a encontrar.
         </p>
         <div className="border border-[#1e1e1e] p-8 md:p-12 space-y-6">
           <p className="font-mono text-xs tracking-[0.2em] text-[#8a7a6a] uppercase">
@@ -25,8 +23,7 @@ export default function RegistroOficioPage() {
             Estamos armando el sistema de registro.
           </p>
           <p className="font-mono text-sm text-[#8a7a6a] leading-relaxed">
-            Mientras tanto, escribinos por WhatsApp y te sumamos a los primeros
-            verificados de Patagonia.
+            Mientras tanto, escribinos por WhatsApp y te sumamos a los primeros verificados de Patagonia.
           </p>
           
             href="https://wa.me/5491162181345"
@@ -38,10 +35,7 @@ export default function RegistroOficioPage() {
           </a>
         </div>
         <div className="mt-8">
-          <Link
-            href="/"
-            className="font-mono text-xs text-[#3a3a3a] hover:text-[#8a7a6a] transition-colors"
-          >
+          <Link href="/" className="font-mono text-xs text-[#3a3a3a] hover:text-[#8a7a6a] transition-colors">
             Volver
           </Link>
         </div>
