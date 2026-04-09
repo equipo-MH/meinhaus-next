@@ -37,22 +37,40 @@ export default function HomePage() {
           >
             Conectamos a quienes saben construir con quienes quieren construir bien.
           </p>
-          <a
-            href="#bifurcacion"
-            className="inline-block font-mono text-sm tracking-widest uppercase border border-[#c17a4a] text-[#c17a4a] px-8 py-4 hover:bg-[#c17a4a] hover:text-[#0e0e0e] transition-colors duration-200"
-            style={{
-              padding: '0.75rem 2rem',
-              borderRadius: '4px',
-              background: 'var(--orange)',
-              color: 'white',
-              fontFamily: 'var(--sans)',
-              fontWeight: 600,
-              border: 'none',
-              cursor: 'pointer',
-            }}
-          >
-            Entrar
-          </a>
+          <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
+            <Link
+              href="/registro-oficio"
+              className="inline-block font-mono text-sm tracking-widest uppercase border border-[#c17a4a] text-[#c17a4a] px-8 py-4 hover:bg-[#c17a4a] hover:text-[#0e0e0e] transition-colors duration-200"
+              style={{
+                padding: '0.75rem 2rem',
+                borderRadius: '4px',
+                background: 'var(--orange)',
+                color: 'white',
+                fontFamily: 'var(--sans)',
+                fontWeight: 600,
+                border: 'none',
+                cursor: 'pointer',
+              }}
+            >
+              Soy profesional
+            </Link>
+            <Link
+              href="/quiero-construir"
+              className="inline-block font-mono text-sm tracking-widest uppercase border border-[#c17a4a] text-[#c17a4a] px-8 py-4 hover:bg-[#c17a4a] hover:text-[#0e0e0e] transition-colors duration-200"
+              style={{
+                padding: '0.75rem 2rem',
+                borderRadius: '4px',
+                background: 'transparent',
+                color: 'var(--orange)',
+                fontFamily: 'var(--sans)',
+                fontWeight: 600,
+                border: '1px solid var(--orange)',
+                cursor: 'pointer',
+              }}
+            >
+              Quiero construir
+            </Link>
+          </div>
         </div>
       </section>
 
