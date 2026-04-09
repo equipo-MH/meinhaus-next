@@ -84,10 +84,10 @@ export const PROVEEDORES: Proveedor[] = [
   },
   {
     id: 'tao_point_general_roca',
-    nombre: 'TAO Point — General Roca',
+    nombre: 'TAO Point — Patagonia',
     tipo: 'tao_point',
     web: 'https://taopaneles.com/tao-points',
-    ciudad: 'General Roca',
+    ciudad: 'Patagonia',
     provincia: 'Río Negro',
     cobertura: 'patagonia',
     notas: 'MeinHaus opera como referencia de este TAO Point. Patagonia Norte.',
@@ -778,7 +778,7 @@ export const COMPONENTES_SISTEMA: Record<SistemaKey, ComponenteSistema[]> = {
     {
       capa: 'estructura',
       nombre: 'Kit mixto SIP + estructura metálica',
-      descripcion: 'Combinación de paneles SIP con columnas metálicas TCL o UPN. Caso de referencia: Casa RoBe, General Roca.',
+    descripcion: 'Combinación de paneles SIP con columnas metálicas TCL o UPN. Caso de referencia: Casa RoBe, Patagonia.',
       marca_referencia: 'TAO + Ternium',
       proveedores: ['tao_central', 'ternium'],
       modelos: ['SIP 70 + columnas TCL 80×4mm', 'SIP 90 + UPN 100'],

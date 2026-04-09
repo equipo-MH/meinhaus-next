@@ -49,7 +49,7 @@ export default function Footer() {
           fontFamily: 'var(--mono)', fontSize: '.48rem',
           letterSpacing: '.08em', color: 'rgba(250,249,246,.12)',
         }}>
-          © 2026 MeinHaus · General Roca, Río Negro
+        © 2026 MeinHaus · Patagonia, Río Negro
         </div>
       </div>
     </footer>

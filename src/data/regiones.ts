@@ -29,9 +29,9 @@ export const REGIONES: Region[] = [
       'El viento es el principal vector de pérdida de calor — no solo la temperatura',
       'La mampostería sin mejoras térmicas es ineficiente en Patagonia',
       'Los puentes térmicos se amplifican con la diferencia de temperatura exterior/interior',
-      'La mano de obra especializada en SIP y steel frame está disponible en Neuquén, General Roca y Bariloche',
+    'La mano de obra especializada en SIP y steel frame está disponible en Neuquén, Patagonia y Bariloche',
     ],
-    notas: 'MeinHaus opera desde General Roca, Río Negro. TAO Point activo en la ciudad. Experiencia directa en obra en condiciones patagónicas.',
+  notas: 'MeinHaus opera desde Patagonia, Río Negro. TAO Point activo en la ciudad. Experiencia directa en obra en condiciones patagónicas.',
   },
   {
     id: 'amba',

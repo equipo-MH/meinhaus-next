@@ -25,7 +25,7 @@ export default function HomePage() {
       <section className="min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-24 pt-24 pb-16">
         <div className="max-w-5xl">
           <p className="font-mono text-xs tracking-[0.2em] text-[#8a7a6a] uppercase mb-8">
-            General Roca - Patagonia - Argentina - Plataforma global
+              Patagonia - Patagonia - Argentina - Plataforma global
           </p>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.05] mb-6 text-[#e8e4dc]">
             En la era de la IA,<br />
@@ -115,7 +115,7 @@ export default function HomePage() {
 
       <footer className="px-6 md:px-16 lg:px-24 py-10 border-t border-[#1e1e1e]">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <p className="font-mono text-xs text-[#3a3a3a]">MeinHaus - General Roca, Patagonia</p>
+              <p className="font-mono text-xs text-[#3a3a3a]">MeinHaus - Patagonia, Patagonia</p>
           <p className="font-mono text-xs text-[#3a3a3a]">meinhaus.com.ar</p>
         </div>
       </footer>

@@ -139,7 +139,7 @@ export default function RegistroOficioPage() {
                 type="text"
                 value={ciudad}
                 onChange={e => setCiudad(e.target.value)}
-                placeholder="General Roca"
+                placeholder="Patagonia"
                 className={inputClass}
               />
             </div>

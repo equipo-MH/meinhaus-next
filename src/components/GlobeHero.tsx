@@ -15,7 +15,7 @@ function canUseWebGL(): boolean {
 const MARKERS = [
   // Argentina
   { lat: -34.6, lng: -58.4, label: 'Buenos Aires', color: '#E8531A', size: 0.028 },
-  { lat: -38.9, lng: -68.1, label: 'General Roca', color: '#F0A060', size: 0.035 }, // MeinHaus HQ
+  { lat: -38.9, lng: -68.1, label: 'Patagonia', color: '#F0A060', size: 0.035 }, // MeinHaus HQ
   { lat: -40.8, lng: -62.9, label: 'Patagonia', color: '#9B7C5A', size: 0.022 },
   { lat: -31.4, lng: -64.2, label: 'Córdoba', color: '#9B7C5A', size: 0.022 },
   // World
@@ -78,7 +78,7 @@ function HeroContent() {
           marginBottom: '1.5rem', display: 'flex' as const, alignItems: 'center' as const, gap: '.65rem',
         }}>
           <span style={{ width: '20px', height: '1px', background: 'var(--rl)', display: 'block' }} />
-          General Roca · Patagonia · Argentina · Plataforma global
+        Patagonia · Patagonia · Argentina · Plataforma global
         </div>
         <h1 style={{
           fontFamily: 'var(--serif)',
@@ -263,12 +263,12 @@ export default function GlobeHero() {
           )
           const pos = latLngToVec3(m.lat, m.lng, 1.015)
           mesh.position.set(pos.x, pos.y, pos.z)
-          mesh.userData = { label: m.label, isHQ: m.label === 'General Roca' }
+      mesh.userData = { label: m.label, isHQ: m.label === 'Patagonia' }
           scene.add(mesh)
           s.markers.push(mesh)
         })
 
-        // ── Pulse ring for General Roca ────────────────────────
+      // ── Pulse ring for Patagonia ────────────────────────
         const pulseGeo = new THREE.TorusGeometry(0.05, 0.006, 8, 32)
         const pulseMat = new THREE.MeshBasicMaterial({
           color: 0xE8531A, transparent: true, opacity: 0.7,
@@ -433,7 +433,7 @@ export default function GlobeHero() {
           pointerEvents: 'none' as const, opacity: 0.85,
         }}>
           <span style={{ width: '20px', height: '1px', background: 'var(--rl)' }} />
-          General Roca
+                Patagonia
         </div>
       )}
 

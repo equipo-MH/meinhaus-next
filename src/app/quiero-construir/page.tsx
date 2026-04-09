@@ -127,7 +127,7 @@ export default function QuieroConstruirPage() {
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '.85rem' }}>
                   <div>
                     <label style={label}>Ciudad / Localidad</label>
-                    <input value={ciudad} onChange={e => setCiudad(e.target.value)} placeholder="General Roca" style={input} />
+              <input value={ciudad} onChange={e => setCiudad(e.target.value)} placeholder="Patagonia" style={input} />
                   </div>
                   <div>
                     <label style={label}>Tipo de proyecto</label>

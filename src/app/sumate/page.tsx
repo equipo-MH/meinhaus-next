@@ -197,7 +197,7 @@ export default function SumatePage() {
                   </div>
                   <div>
                     <label style={label}>Ciudad / Localidad *</label>
-                    <input value={ciudad} onChange={e => setCiudad(e.target.value)} required placeholder="General Roca" style={input} />
+              <input value={ciudad} onChange={e => setCiudad(e.target.value)} required placeholder="Patagonia" style={input} />
                   </div>
                 </div>
 

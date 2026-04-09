@@ -1,52 +1,64 @@
-# AGENTS.md — MeinHaus Next
+# AGENTS.md — MeinHaus Platform
 
 ## Proyecto
-
-MeinHaus es una plataforma de construcción eficiente con sede en Patagonia, Argentina. Conecta profesionales de oficios con clientes. Este repositorio es la web pública y futura plataforma, construida con Next.js (App Router).
+MeinHaus es una plataforma digital de construcción con base en Patagonia, Argentina.
+Conecta profesionales del oficio (albañiles, carpinteros, instaladores, etc.) con clientes que quieren construir bien.
+Repo: `equipo-MH/meinhaus-next`
+Deploy: Vercel → `meinhaus-next.vercel.app`
 
 ## Stack
+- Next.js 15, TypeScript, Tailwind CSS v4
+- Supabase (PostgreSQL + RLS + Auth)
+- Vercel (hosting)
+- Node.js, PowerShell (entorno local Windows)
 
-- **Framework:** Next.js (App Router)
-- **Estilos:** Tailwind CSS v4
-- **Tipografía:** Satoshi (cargada vía font-face)
-- **Deploy:** Vercel
-- **Lenguaje:** TypeScript
+## Estructura clave
+- `src/app/` — rutas de Next.js (App Router)
+- `src/app/globals.css` — variables CSS, tokens de diseño, fuente Satoshi
+- `src/app/page.tsx` — landing principal
+- `src/app/registro-oficio/page.tsx` — formulario de registro para profesionales
+- `src/app/quiero-construir/page.tsx` — formulario para clientes
+- `src/lib/supabase.ts` — cliente Supabase + constantes (ROL_LABEL, etc.)
 
-## Estructura de /src
+## Sistema de diseño
+- Fondo dark: `#0D0D0B`
+- Texto: `#F2EDE6` (off-white cálido)
+- Acento oro: `#C8A96E`
+- Tipografía UI: Satoshi (font-face embebido en globals.css)
+- Tipografía display: Cormorant Garamond (serif)
+- Tokens en `--sans`, `--serif`, `--mono`, `--bg`, `--ink`, `--orange`, etc.
 
-```
-src/
-├── app/          # Rutas y layouts (App Router)
-├── components/   # Componentes reutilizables
-├── data/         # Datos estáticos, taxonomías, contenido
-├── lib/          # Utilidades, helpers, configuración
-└── types/        # Tipos TypeScript
-```
+## Base de datos (Supabase)
+Tablas principales:
+- `profiles` — profesionales del oficio. Campos: nombre, email, telefono, provincia, ciudad, oficio_principal, sistemas, descripcion, badge (gris/oro/verde)
+- `solicitudes_obra` — clientes que quieren construir
+- `contact_requests` — solicitudes de contacto oficio↔cliente
+- `organizations` — empresas/cuadrillas
 
-## Convenciones
+## Reglas de código
+1. **Nunca mencionar "General Roca"** — usar siempre "Patagonia"
+2. TypeScript estricto — no usar `any` sin justificación
+3. Componentes en español (nombres de variables, comentarios)
+4. No instalar dependencias sin consultar — el stack está definido
+5. Tailwind utility classes únicamente — no CSS inline salvo variables CSS
+6. Formularios guardan en Supabase con manejo de errores
+7. No lanzar rutas con auth hasta que Supabase Auth esté completamente implementado
+8. Encoding: todos los archivos en UTF-8 — no romper caracteres como ñ, tildes
 
-- Componentes en PascalCase: `HeroSection.tsx`, `ServiceCard.tsx`
-- Un componente por archivo
-- Estilos con clases de Tailwind, sin CSS externo salvo excepciones justificadas
-- Datos estáticos en `/data`, no hardcodeados en componentes
-- Tipos compartidos en `/types`
-- Idioma del código: inglés para variables, funciones y props. Contenido visible al usuario en español
+## Convenciones de commit
+- `v{número}: descripción breve` — ej: `v23: fix encoding layout.tsx`
+- Siempre hacer `npm run build` antes de commitear
 
-## Comandos
+## Tareas seguras para el agente
+- Reemplazos de texto en archivos `.tsx` / `.ts`
+- Ajustes de estilo dentro del sistema de diseño existente
+- Agregar campos a formularios existentes
+- Correcciones de encoding o typos
+- Refactors de componentes sin cambiar lógica de negocio
 
-```bash
-npm install        # Instalar dependencias
-npm run dev        # Dev server
-npm run build      # Build de producción
-npm run lint       # ESLint
-```
-
-## Reglas para agentes
-
-- No instalar dependencias nuevas sin justificación
-- No modificar layout.tsx ni configuraciones globales salvo que la tarea lo requiera explícitamente
-- Mantener los componentes pequeños y con responsabilidad única
-- Si un componente supera ~150 líneas, proponer separación
-- Respetar la estructura existente de carpetas
-- Todo nuevo componente debe ser tipado (sin `any`)
-- Commits en español, formato: "v[N]: descripción breve del cambio"
+## Tareas que requieren revisión humana
+- Cambios en esquema de Supabase (SQL migrations)
+- Modificar RLS policies
+- Agregar nuevas rutas con lógica de auth
+- Cambiar el sistema de badges o verificación
+- Tocar `src/lib/supabase.ts`

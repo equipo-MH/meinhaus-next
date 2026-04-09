@@ -59,7 +59,7 @@ export default function ContactoPage() {
                 {/* Info blocks */}
                 <div style={{ marginTop: '3rem', display: 'grid' as const, gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'rgba(24,23,19,.08)', border: '1px solid rgba(24,23,19,.08)' }}>
                   {[
-                    ['Ubicación', 'General Roca, Río Negro, Patagonia Argentina'],
+    ['Ubicación', 'Patagonia, Río Negro, Patagonia Argentina'],
                     ['Respuesta', 'Menos de 48 hs hábiles'],
                     ['Radio de obra', 'Patagonia Norte y coordinación técnica a distancia'],
                     ['Plataforma', 'meinhaus.com.ar — Sistemas constructivos AR'],

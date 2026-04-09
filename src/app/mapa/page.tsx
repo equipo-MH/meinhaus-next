@@ -9,8 +9,8 @@ const LAYER_INFO: Record<string, { title: string; body: string; color: string }>
   clima:   { title: 'Temperatura · Invierno', body: 'Patagonia: −15 a −5°C. Cuyo: −3 a +2°C. Centro: +2 a +6°C. NOA: +10 a +15°C. Variable clave para la envolvente del edificio.', color: '#3B82F6' },
   sismica: { title: 'Zonificación sísmica · INPRES', body: 'NOA y Cuyo: zonas 3–4. Patagonia: 2–3. Litoral y Buenos Aires: 0–1. Define requisitos estructurales y normativa aplicable.', color: '#EF4444' },
   costos:  { title: 'Costo estimado · Llave en mano', body: 'AMBA: USD 1.350–1.600. Patagonia: +9%. Centro: −5%. NOA/NEA: −12%. Cuyo: −3%. Fuentes: APYMECO, CAC · T1 2026.', color: '#10B981' },
-  sip:     { title: 'Disponibilidad SIP-TAO', body: 'Fábrica TAO en Neuquén. Distribución directa a toda Patagonia. TAO Point en General Roca. Llegada a Buenos Aires y Centro.', color: '#9B7C5A' },
-  mh:      { title: 'Zona MeinHaus', body: 'Sede: General Roca, Río Negro. Radio directo: toda Patagonia Norte. Proyectos con coordinación técnica a distancia.', color: '#E8531A' },
+    sip:     { title: 'Disponibilidad SIP-TAO', body: 'Fábrica TAO en Neuquén. Distribución directa a toda Patagonia. TAO Point en Patagonia. Llegada a Buenos Aires y Centro.', color: '#9B7C5A' },
+    mh:      { title: 'Zona MeinHaus', body: 'Sede: Patagonia, Río Negro. Radio directo: toda Patagonia Norte. Proyectos con coordinación técnica a distancia.', color: '#E8531A' },
 }
 
 export default function MapaPage() {

@@ -2,7 +2,7 @@ import type { Provincia } from '@/types'
 
 export const PROVINCIAS: Provincia[] = [
   { id: 'rionegro', nombre: 'Río Negro', region: 'Patagonia', sip: 'Habilitado', steel: 'Habilitado', madera: 'Con consulta', container: 'Variable por municipio', sismo: 'Zona 2–3', temp: '−8°C',
-    detalle: { colegio: 'Colegio Arquitectos Río Negro · Ley 2.176', cirsoc: '201 · 303 · 601', sipCat: 'CAT N°3648 aceptado con documentación técnica', notas: 'General Roca tiene experiencia previa con SIP. TAO Point operativo en la ciudad. Caso Casa RoBe aprobado por Municipalidad y Colegio.' } },
+      detalle: { colegio: 'Colegio Arquitectos Río Negro · Ley 2.176', cirsoc: '201 · 303 · 601', sipCat: 'CAT N°3648 aceptado con documentación técnica', notas: 'Patagonia tiene experiencia previa con SIP. TAO Point operativo en la ciudad. Caso Casa RoBe aprobado por Municipalidad y Colegio.' } },
   { id: 'neuquen', nombre: 'Neuquén', region: 'Patagonia', sip: 'Habilitado', steel: 'Habilitado', madera: 'Habilitado', container: 'Con CAT específico', sismo: 'Zona 2–3', temp: '−10°C',
     detalle: { colegio: 'Colegio Arquitectos de Neuquén', cirsoc: '201 · 303 · 601', sipCat: 'CAT N°3648 · Fábrica TAO en la provincia', notas: 'Neuquén capital tiene buena adopción de sistemas industrializados. Fábrica TAO en la ciudad.' } },
   { id: 'bsas', nombre: 'Buenos Aires (AMBA)', region: 'Centro', sip: 'Habilitado', steel: 'Habilitado', madera: 'Con consulta', container: 'Con memoria técnica', sismo: 'Zona 0–1', temp: '+5°C',

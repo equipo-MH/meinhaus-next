@@ -313,7 +313,7 @@ export const SISTEMAS: Sistema[] = [
     id: 'mixto', idx: 7, slug: 'mixto',
     badge: 'Combinación · Hibridación',
     name: 'Sistemas mixtos',
-    desc: 'Combinaciones de dos o más sistemas en un mismo proyecto. Caso real: Casa RoBe en General Roca — SIP + madera laminada + columnas metálicas.',
+    desc: 'Combinaciones de dos o más sistemas en un mismo proyecto. Caso real: Casa RoBe en Patagonia — SIP + madera laminada + columnas metálicas.',
     costo: 'Variable por diseño',
     tiempo: 'Variable',
     aislacion: 'Alta',
@@ -339,7 +339,7 @@ export const SISTEMAS: Sistema[] = [
     callout: {
       type: 'ok', ico: '✓',
       title: 'Caso real MeinHaus — Casa RoBe',
-      body: 'La Casa RoBe en General Roca combina paneles SIP 70, madera laminada pino paraná y estructura metálica. Aprobada por la Municipalidad de General Roca y el Colegio de Arquitectos de Río Negro.',
+    body: 'La Casa RoBe en Patagonia combina paneles SIP 70, madera laminada pino paraná y estructura metálica. Aprobada por la Municipalidad de Patagonia y el Colegio de Arquitectos de Río Negro.',
     },
     certTags: ['Múltiple · según sistemas usados'],
     veredicto: {
