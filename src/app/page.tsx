@@ -23,18 +23,36 @@ export default function HomePage() {
     <main className="min-h-screen bg-[#0e0e0e] text-[#e8e4dc]">
 
       <section className="min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-24 pt-24 pb-16">
-        <div className="max-w-5xl">
+        <div className="max-w-5xl" style={{ paddingLeft: 'clamp(2rem, 5vw, 5rem)' }}>
           <p className="font-mono text-xs tracking-[0.2em] text-[#8a7a6a] uppercase mb-8">
-              Patagonia - Patagonia - Argentina - Plataforma global
+              Patagonia - Argentina - Plataforma global
           </p>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.05] mb-6 text-[#e8e4dc]">
             En la era de la IA,<br />
             <em className="not-italic text-[#c17a4a]">el oficio vuelve.</em>
           </h1>
-          <p className="font-mono text-sm md:text-base text-[#8a7a6a] max-w-xl mb-12 leading-relaxed">
+          <p
+            className="font-mono text-sm md:text-base text-[#8a7a6a] max-w-xl mb-12 leading-relaxed"
+            style={{ fontFamily: 'var(--sans)', fontSize: '1.15rem' }}
+          >
             Conectamos a quienes saben construir con quienes quieren construir bien.
           </p>
-          <a href="#bifurcacion" className="inline-block font-mono text-sm tracking-widest uppercase border border-[#c17a4a] text-[#c17a4a] px-8 py-4 hover:bg-[#c17a4a] hover:text-[#0e0e0e] transition-colors duration-200">Entrar</a>
+          <a
+            href="#bifurcacion"
+            className="inline-block font-mono text-sm tracking-widest uppercase border border-[#c17a4a] text-[#c17a4a] px-8 py-4 hover:bg-[#c17a4a] hover:text-[#0e0e0e] transition-colors duration-200"
+            style={{
+              padding: '0.75rem 2rem',
+              borderRadius: '4px',
+              background: 'var(--orange)',
+              color: 'white',
+              fontFamily: 'var(--sans)',
+              fontWeight: 600,
+              border: 'none',
+              cursor: 'pointer',
+            }}
+          >
+            Entrar
+          </a>
         </div>
       </section>
 
