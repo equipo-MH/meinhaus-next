@@ -33,9 +33,19 @@ export default function HomePage() {
           </h1>
           <p
             className="font-mono text-sm md:text-base text-[#8a7a6a] max-w-xl mb-12 leading-relaxed"
-            style={{ fontFamily: 'var(--sans)', fontSize: '1.15rem' }}
+            style={{ fontFamily: 'var(--sans)', fontSize: '1.15rem', maxWidth: '560px', lineHeight: '1.6' }}
           >
-            Conectamos a quienes saben construir con quienes quieren construir bien.
+            Conectamos proyectos con profesionales que saben construir. Validados por criterio, no por algoritmo.
+          </p>
+          <p
+            style={{ fontFamily: 'var(--sans)', fontSize: '0.9rem', color: 'var(--light)', marginTop: '0.5rem' }}
+          >
+            El acceso es limitado. No trabajamos con cualquiera.
+          </p>
+          <p
+            style={{ fontFamily: 'var(--sans)', fontSize: '0.9rem', color: 'var(--light)', marginTop: '0.25rem' }}
+          >
+            Estamos armando el primer grupo de profesionales verificados de la región. Si trabajás bien, tu lugar está acá.
           </p>
           <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
             <Link
@@ -68,7 +78,7 @@ export default function HomePage() {
                 cursor: 'pointer',
               }}
             >
-              Quiero construir
+              Tengo un proyecto
             </Link>
           </div>
         </div>
