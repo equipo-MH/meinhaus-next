@@ -41,6 +41,23 @@ export default function RegistroOficioPage() {
           badge: "gris",
         })
       if (err) throw err
+      try {
+        await fetch("https://meinhaus.app.n8n.cloud/webhook-test/95ac1963-ea04-4bbe-b99c-e69d4cacd449", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            nombre,
+            email,
+            telefono,
+            oficio: rol,
+            ciudad,
+            provincia,
+            fecha: new Date().toISOString(),
+          }),
+        })
+      } catch (err) {
+        console.error("Error notificando a n8n:", err)
+      }
       setStep("done")
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : "Error al guardar. Intentalo de nuevo.")
